@@ -62,21 +62,56 @@
                     </div>
                     <div class="card-body">
                         <p class="result">Predicted Personality: {{ personality }}</p>
+                    
                         {% if personality == 'dependable' %}
-                            <p class="description">You are dependable and trustworthy. You take your commitments seriously and can be relied upon.</p>
+                            <p class="description">
+                                <strong>You are dependable and trustworthy!</strong> <br>
+                                You take your commitments seriously and can be relied upon by friends, family, and colleagues. People trust you to get things done, and you follow through on your promises. This makes you an excellent team player and a valuable individual in any setting.
+                            </p>
                         {% elif personality == 'extraverted' %}
-                            <p class="description">You are outgoing and sociable. You enjoy being around people and thrive in social situations.</p>
+                            <p class="description">
+                                <strong>You are outgoing and sociable!</strong> <br>
+                                You thrive in social settings and enjoy meeting new people. Your energy and enthusiasm are contagious, and you bring a sense of excitement to every situation. Whether at a party or a business meeting, you're the life of the event and enjoy connecting with others.
+                            </p>
                         {% elif personality == 'lively' %}
-                            <p class="description">You are lively and energetic. You bring enthusiasm to your interactions and activities.</p>
+                            <p class="description">
+                                <strong>You are lively and energetic!</strong> <br>
+                                Your zest for life is undeniable. You approach everything with enthusiasm and positivity. Whether it's a challenging task or a fun adventure, you dive in with vigor and an optimistic outlook. Your energy inspires those around you to live life to the fullest.
+                            </p>
                         {% elif personality == 'serious' %}
-                            <p class="description">You are serious and focused. You approach tasks with dedication and discipline.</p>
+                            <p class="description">
+                                <strong>You are serious and focused!</strong> <br>
+                                You approach life with a sense of purpose and commitment. Your disciplined nature allows you to stay on track, whether at work, school, or in personal pursuits. You prioritize goals and take the necessary steps to achieve them, making you highly reliable and dedicated.
+                            </p>
                         {% elif personality == 'responsible' %}
-                            <p class="description">You are responsible and accountable. You take ownership of your actions and fulfill your obligations.</p>
+                            <p class="description">
+                                <strong>You are responsible and accountable!</strong> <br>
+                                You take ownership of your actions and responsibilities, ensuring that tasks are completed on time and to the highest standard. Your reliability and sense of duty make you a natural leader. You always fulfill your obligations, earning the trust and respect of those around you.
+                            </p>
+                        {% elif personality == 'creative' %}
+                            <p class="description">
+                                <strong>You are creative and imaginative!</strong> <br>
+                                You see the world through a unique lens and approach problems with innovative solutions. Your imagination knows no bounds, and you are always looking for new ways to express yourself and explore your ideas. Whether in the arts or problem-solving, your creativity sets you apart.
+                            </p>
+                        {% elif personality == 'organized' %}
+                            <p class="description">
+                                <strong>You are organized and meticulous!</strong> <br>
+                                You have a keen attention to detail and a strong sense of structure. Whether managing a project, your personal life, or your workspace, you excel at keeping things in order. Your methodical approach allows you to stay focused and accomplish tasks with precision.
+                            </p>
+                        {% elif personality == 'empathetic' %}
+                            <p class="description">
+                                <strong>You are empathetic and compassionate!</strong> <br>
+                                You understand and share the feelings of others, offering support and kindness in times of need. Your caring nature makes you a great friend and a strong pillar for those who seek comfort. People feel safe and understood in your presence.
+                            </p>
                         {% else %}
-                            <p class="description">Description for {{ personality }} personality not available.</p>
+                            <p class="description">
+                                Description for {{ personality }} personality not available. But don't worry – your unique traits make you who you are!
+                            </p>
                         {% endif %}
+                    
                         <a href="/" class="btn btn-primary btn-block">Back to Home</a>
                     </div>
+                    
                 </div>
             </div>
         </div>
